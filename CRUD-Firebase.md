@@ -31,12 +31,12 @@ export default MyApp
 
 # Montando o forms no index do projeto usando chakra documentation
 
-#Instalando o formik e o yup para validação de formulario
-#formik sera usado para gerenciar o formulario, o states do formulario
+# Instalando o formik e o yup para validação de formulario
+# formik sera usado para gerenciar o formulario, o states do formulario
 
 -yarn add formik yup
 
-#Acessando o git da doc do yup
+# Acessando o git da doc do yup
 -https://github.com/jquense/yup
 -adicionando o bloco de  codigo do schema"(
     
