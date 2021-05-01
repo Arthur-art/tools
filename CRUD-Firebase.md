@@ -31,8 +31,8 @@ export default MyApp
 - yarn add formik yup
 
 # Acessando o git da doc do yup
--https://github.com/jquense/yup
--adicionando o bloco de  codigo do schema"(
+- https://github.com/jquense/yup
+- adicionando o bloco de  codigo do schema"(
     
     const validationSchema = yup.object().shape({
   email: yup
@@ -52,7 +52,7 @@ export default MyApp
 
 
 # Criando um novo projeto no firebase para cadastrar usuario e conseguir fazer login
--https://console.firebase.google.com/u/0/?hl=pt&pli=1
+- https://console.firebase.google.com/u/0/?hl=pt&pli=1
 
 # Instalando o firebase (Para o banco de dados e para autenticacao)
 
