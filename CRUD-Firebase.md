@@ -30,6 +30,33 @@ export default MyApp
 
 - yarn add formik yup
 
+# Configurando o formik 
+- adicionando codigo na page onde formik sera usado para manipular os valores
+(
+  const {
+        values,
+        errors,
+        touched,
+        handleChange,
+        handleBlur,
+        handleSubmit,
+        isSubmitting } = useFormik({
+
+            onSubmit: (values, form) => {
+                console.log(values)
+            },
+            validationSchema,
+            initialValues: {
+                email: '',
+                username: '',
+                password: '',
+                endereco: ''
+            },
+
+        })
+)
+- Adicionando handleChange, values.email, values.password, values.endereco nos inputs dos campos que serão salvos no formik
+
 # Acessando o git da doc do yup
 - https://github.com/jquense/yup
 - adicionando o bloco de  codigo do schema"(

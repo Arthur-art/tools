@@ -11,11 +11,13 @@
 
 # Instalando chakra para parte do front-end
 
--https://chakra-ui.com/docs/getting-started
--yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
--atualize a page _app.js"(
+- https://chakra-ui.com/docs/getting-started
+- yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
+- se for next-app faça: 
 
-    import { ChakraProvider } from "@chakra-ui/react"
+Atualize a page _app.js"(
+
+import { ChakraProvider } from "@chakra-ui/react"
 
 function MyApp({ Component, pageProps }) {
   return <ChakraProvider>
