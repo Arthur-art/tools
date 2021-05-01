@@ -5,17 +5,11 @@
 - yarn create next-app nome-do-projeto
 - yarn dev
 
-# Criando pages "next ja faz o roteamento automatico das pages" dentro da pasta "pages"
-
--agendas.js
--schedule.js
--index.js
-
 # Instalando chakra para parte do front-end
 
--https://chakra-ui.com/docs/getting-started
--yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
--atualize a page _app.js"(
+- https://chakra-ui.com/docs/getting-started
+- yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
+- atualize a page _app.js"(
 
     import { ChakraProvider } from "@chakra-ui/react"
 
@@ -32,9 +26,9 @@ export default MyApp
 # Montando o forms no index do projeto usando chakra documentation
 
 # Instalando o formik e o yup para validação de formulario
-# formik sera usado para gerenciar o formulario, o states do formulario
+- formik sera usado para gerenciar o formulario, o states do formulario
 
--yarn add formik yup
+- yarn add formik yup
 
 # Acessando o git da doc do yup
 -https://github.com/jquense/yup
@@ -51,10 +45,10 @@ export default MyApp
 
 )"
 
--adicionando o mesmo no index-Login e signup do projeto para validar os campos do forms
+- adicionando o mesmo no index-Login e signup do projeto para validar os campos do forms
 
--criando pastas Agenda, Login e adicionando components jsx de Agenda e Login 
--exportando esses components para serem reenderizados no index do projeto 
+- criando pastas Agenda, Login e adicionando components jsx de Agenda e Login 
+- exportando esses components para serem reenderizados no index do projeto 
 
 
 # Criando um novo projeto no firebase para cadastrar usuario e conseguir fazer login
@@ -62,8 +56,8 @@ export default MyApp
 
 # Instalando o firebase (Para o banco de dados e para autenticacao)
 
--yarn add firebase firebase-admin
--registre o app no firebase
+- yarn add firebase firebase-admin
+- registre o app no firebase
 
 # Configurando o firebase
 - Adicionando pastas "config/firebase/" com um arquivo "client.js" na pasta firebase na raiz do projeto
@@ -119,8 +113,8 @@ export { firebaseClient }
 # Deploy in vercel
 
 # Firebase Cloud Firestore - Criando banco de dados
--acesse firestore no site do firebase
--crie um banco de dados
+- acesse firestore no site do firebase
+- crie um banco de dados
 - em configuracoes do projeto  /  contas de serviço - crie uma conta de serviço
 - em config/firebase crie um arquivo server.js - adicione "(
 
@@ -150,4 +144,4 @@ export default admin;
 
 
 # Criando component Auth/index.js (Provider) para gerenciar tudo que for autenticacao
--refatorando signup, Login/index, pages/index passando a config de auth para o component Auth
+- refatorando signup, Login/index, pages/index passando a config de auth para o component Auth
