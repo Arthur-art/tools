@@ -29,6 +29,8 @@ export default MyApp
 
 )"
 
+# Adicionando sass
+- yarn add sass
 
 # Deploy
 

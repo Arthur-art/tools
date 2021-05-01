@@ -56,6 +56,17 @@ export default MyApp
         })
 )
 - Adicionando handleChange, values.email, values.password, values.endereco nos inputs dos campos que serão salvos no formik
+- Exemplo 
+(
+
+    <FormControl isRequired id="email">
+                    <FormLabel>E-mail</FormLabel>
+                    <Input type="email" value={values.email} onChange={handleChange} onBlur={handleBlur} />
+                    {touched.email && (<FormHelperText textColor="#e74c3c"> {errors.email}</FormHelperText>)}
+                </FormControl>
+
+
+)
 
 # Acessando o git da doc do yup
 - https://github.com/jquense/yup
