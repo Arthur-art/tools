@@ -9,14 +9,14 @@
 
 - https://chakra-ui.com/docs/getting-started
 - yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
-- atualize a page _app.js"(
+- atualize a page _app.js "(
 
     import { ChakraProvider } from "@chakra-ui/react"
 
-function MyApp({ Component, pageProps }) {
-  return <ChakraProvider>
-    <Component {...pageProps} />
-  </ChakraProvider>
+      function MyApp({ Component, pageProps }) {
+          return <ChakraProvider>
+                    <Component {...pageProps} />
+                 </ChakraProvider>
 }
 
 export default MyApp
@@ -34,7 +34,7 @@ export default MyApp
 - adicionando codigo na page onde formik sera usado para manipular os valores
 - import { useFormik } from "formik";
 
-(
+"(
    const {
         values,
         errors,
@@ -56,7 +56,7 @@ export default MyApp
             },
 
         })
-)
+)"
 - Adicionando handleChange, values.email, values.password, values.endereco nos inputs dos campos que serão salvos no formik
 - Exemplo 
 "(
@@ -112,7 +112,7 @@ const firebaseConfig = {
     appId: process.env.NEXT_PUBLIC_APP_ID,
     measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
-
+)"
 - Para evitar que o firebase seja recriado pelo hot reload do next 
   - const app = firebaseClient.apps.length ? firebaseClient.app() : firebaseClient.initializeApp(firebaseConfig);
 
@@ -193,7 +193,7 @@ onSubmit: async (values, form) => {
 - importando persistenceMode no index do Login
 
 - Adicionando na index do login 
-    - (
+     "(
 
        useEffect(() => {
         check()
@@ -205,7 +205,7 @@ onSubmit: async (values, form) => {
         })
     }, [values.email, values.password])
 
-    )
+    )"
 
 # Criando arquivo .env na raiz do projeto para guardar variaveis de ambiente
 - alterando no arquivo client do firebase "(
