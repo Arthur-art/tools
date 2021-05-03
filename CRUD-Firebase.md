@@ -142,6 +142,7 @@ onSubmit: async (values, form) => {
 
 
     const [newValue, setNewValue] = useState("")
+
     const [newValuePass, setNewValuePass] = useState("")
 
     const [values, setValues] = useState({})
@@ -178,7 +179,33 @@ onSubmit: async (values, form) => {
 
   )"
 
+  
+# Verificacao de persistencia do Auth no arquivo client do firebase
 
+- https://firebase.google.com/docs/auth/web/auth-state-persistence?authuser=0
+
+- Adicionando codigo na config do firebase
+  - (
+   export const persistenceMode = firebaseClient.auth.Auth.Persistence.LOCAL
+
+  )
+
+- importando persistenceMode no index do Login
+
+- Adicionando na index do login 
+    - (
+
+       useEffect(() => {
+        check()
+        app.auth().onAuthStateChanged(user => {
+            setloginSucess({
+                loading: false,
+                user
+            })
+        })
+    }, [values.email, values.password])
+
+    )
 
 # Criando arquivo .env na raiz do projeto para guardar variaveis de ambiente
 - alterando no arquivo client do firebase "(
@@ -197,43 +224,7 @@ onSubmit: async (values, form) => {
 
 - Guardando os dados das variaveis acima no arquivo .env 
 
-# Verificacao de persistencia do Auth no arquivo client do firebase
-
-- https://firebase.google.com/docs/auth/web/auth-state-persistence?authuser=0
-- export const persistenceMode = firebaseClient.auth.Auth.Persistence.LOCAL;
 
 # Deploy in vercel
-
-# Firebase Cloud Firestore - Criando banco de dados
-- acesse firestore no site do firebase
-- crie um banco de dados
-- em configuracoes do projeto  /  contas de serviço - crie uma conta de serviço
-- em config/firebase crie um arquivo server.js - adicione "(
-
-import admin from 'firebase-admin'
-
-const app = firebase.apps.length ? firebase.app() : firebase.initializeApp({
-    credential: admin.credential.cert({
-        type: process.env.TYPE,
-    })
-});
-
-export default admin;
-
-
-)"
-
-- gere uma nova chave privada pelo firestore
-
-# Profile do usuario feito via API rest
-- Utilizando axios
-- yarn add axios
-
-
-# Gerenciando usuarios 
-- Guardando o id do usuario no back da aplicacao
-- https://firebase.google.com/docs/auth/web/manage-users?authuser=0
-
-
-# Criando component Auth/index.js (Provider) para gerenciar tudo que for autenticacao
-- refatorando signup, Login/index, pages/index passando a config de auth para o component Auth
+- vercel
+- vercel --prod
