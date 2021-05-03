@@ -114,11 +114,69 @@ const firebaseConfig = {
 };
 
 - Para evitar que o firebase seja recriado pelo hot reload do next 
-const app = firebaseClient.apps.length ? firebaseClient.app() : firebaseClient.initializeApp(firebaseConfig);
+  - const app = firebaseClient.apps.length ? firebaseClient.app() : firebaseClient.initializeApp(firebaseConfig);
 
-export { firebaseClient }
 
 - import firebase para o index do projeto, e para os components 
+
+- dentro do onSubmit do Formik para cadastrar um usuario no firebase,  adicione
+  - "(
+
+onSubmit: async (values, form) => {
+                try {
+                    const user = await app.auth().createUserWithEmailAndPassword(values.email, values.password)
+                    console.log(user)
+
+                } catch (error) {
+                    console.log('erro', error)
+                }
+            },
+
+)"
+
+
+# Configurando formik na page Login
+
+- adicione o codigo na page do login 
+  - "(
+
+
+    const [newValue, setNewValue] = useState("")
+    const [newValuePass, setNewValuePass] = useState("")
+
+    const [values, setValues] = useState({})
+
+    const handleChangeNewValueEmail = ({ target }) => {
+        const { value } = target;
+        setNewValue(value)
+    }
+    const handleChangeNewValuePass = ({ target }) => {
+        const { value } = target;
+        setNewValuePass(value)
+    }
+
+    const check = () => {
+        try {
+            const user = app.auth().signInWithEmailAndPassword(values.email, values.password)
+
+        } catch (error) {
+            console.log('erro', error)
+        }
+    }
+
+    const handleSubmit = () => {
+        setValues({
+            email: String(newValue),
+            password: String(newValuePass)
+        })
+    }
+
+    useEffect(() => {
+        check()
+    }, [values.email, values.password])
+
+
+  )"
 
 
 
