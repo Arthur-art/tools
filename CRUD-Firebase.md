@@ -35,7 +35,7 @@ export default MyApp
 - import { useFormik } from "formik";
 
 (
-  const {
+   const {
         values,
         errors,
         touched,
@@ -61,11 +61,11 @@ export default MyApp
 - Exemplo 
 (
 
-    <FormControl isRequired id="email">
-                    <FormLabel>E-mail</FormLabel>
-                    <Input type="email" value={values.email} onChange={handleChange} onBlur={handleBlur} />
-                    {touched.email && (<FormHelperText textColor="#e74c3c"> {errors.email}</FormHelperText>)}
-                </FormControl>
+  - <FormControl isRequired id="email">
+  - <FormLabel>E-mail</FormLabel>
+  - <Input type="email" value={values.email} onChange={handleChange} onBlur={handleBlur} />
+  -  {touched.email && (<FormHelperText textColor="#e74c3c"> {errors.email}</FormHelperText>)}
+  - </FormControl>
 
 
 )
