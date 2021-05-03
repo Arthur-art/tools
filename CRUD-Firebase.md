@@ -32,6 +32,8 @@ export default MyApp
 
 # Configurando o formik 
 - adicionando codigo na page onde formik sera usado para manipular os valores
+- import { useFormik } from "formik";
+
 (
   const {
         values,
@@ -83,23 +85,21 @@ export default MyApp
 
 )"
 
-- adicionando o mesmo no index-Login e signup do projeto para validar os campos do forms
-
-- criando pastas Agenda, Login e adicionando components jsx de Agenda e Login 
-- exportando esses components para serem reenderizados no index do projeto 
-
-
-# Criando um novo projeto no firebase para cadastrar usuario e conseguir fazer login
-- https://console.firebase.google.com/u/0/?hl=pt&pli=1
-
 # Instalando o firebase (Para o banco de dados e para autenticacao)
 
 - yarn add firebase firebase-admin
 - registre o app no firebase
 
+# Criando um novo projeto no firebase para cadastrar usuario e conseguir fazer login
+- https://console.firebase.google.com/u/0/?hl=pt&pli=1
+
+- crie um novo projeto no console
+
+- depois de criado adicione um app para começar (Web no caso)
+
 # Configurando o firebase
-- Adicionando pastas "config/firebase/" com um arquivo "client.js" na pasta firebase na raiz do projeto
-- Adicionando codigo ao arquivo client da pasta firebase - "(
+- Adicionando pastas "config/firebase/" com um arquivo "index.js" na pasta raiz do projeto
+- Adicionando codigo ao arquivo index da pasta firebase - "(
 
 import firebaseClient from 'firebase/app'
 import 'firebase/auth'
@@ -113,17 +113,13 @@ const firebaseConfig = {
     measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
-//Para evitar que o firebase seja recriado pelo hot reload do next 
+- Para evitar que o firebase seja recriado pelo hot reload do next 
 const app = firebaseClient.apps.length ? firebaseClient.app() : firebaseClient.initializeApp(firebaseConfig);
-
-//Verificacao de persistencia do Auth
-export const persistenceMode = firebaseClient.auth.Auth.Persistence.LOCAL;
-
 
 export { firebaseClient }
 
 - import firebase para o index do projeto, e para os components 
-- autenticacao feita direto do site do firebase('facebook','email')
+
 
 
 # Criando arquivo .env na raiz do projeto para guardar variaveis de ambiente
