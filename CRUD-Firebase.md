@@ -9,7 +9,7 @@
 
 - https://chakra-ui.com/docs/getting-started
 - yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
-- atualize a page _app.js "(
+- atualize a page _app.js 
 ```js
 
     import { ChakraProvider } from "@chakra-ui/react"
@@ -22,7 +22,6 @@
 
 export default MyApp
 ```
-)"
 
 # Montando o forms no index do projeto usando chakra documentation
 
