@@ -1,7 +1,7 @@
 # Maneiras de se consumir uma Api:
 
 # Modelo SPA(single page applications) usando useEffect:
-
+```js
  useEffect(() => {
     fetch('http://localhost:3333/episodes').then((response) => {
       return response.json()
@@ -27,10 +27,13 @@
         }
 }
 
+```
 
 # Modelo SSG(static site generators), requisição feita na camada do next
 
 - Dentro de qualquer arquivo na pasta pages export uma function chamada (getStaticProps)
+
+```js
      
     export async function getStaticProps(){
         const response = await fetch('http://localhost:3333/episodes')
@@ -47,10 +50,13 @@
         }
 }
 
+```
+
 # Adicionando axios
 - yarn add axios
 - criando no src uma pasta services/api.ts(
 
+```js
   import axios from 'axios'
 
 export const api = axios.create({
@@ -76,5 +82,5 @@ export const api = axios.create({
 
     revalidate: 60 * 60 * 8,
   }
-  
+  ```
 )
