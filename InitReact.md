@@ -15,8 +15,8 @@
 - yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
 - se for next-app faça: 
 
-Atualize a page _app.js"(
-
+Atualize a page _app.js
+```js
 import { ChakraProvider } from "@chakra-ui/react"
 
 function MyApp({ Component, pageProps }) {
@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
 
 export default MyApp
 
-)"
+```
 
 # Adicionando sass
 - yarn add sass
