@@ -55,7 +55,7 @@ export default MyApp
             },
 
         })
-        ```
+ ```
 - Adicionando handleChange, values.email, values.password, values.endereco nos inputs dos campos que serão salvos no formik
 - Exemplo :
 ```js
@@ -72,7 +72,7 @@ export default MyApp
 # Acessando o git da doc do yup
 - https://github.com/jquense/yup
 - adicionando o bloco de  codigo do schema:
-    ```js
+```js
     const validationSchema = yup.object().shape({
   email: yup
     .string()
@@ -118,7 +118,7 @@ const firebaseConfig = {
 - import firebase para o index do projeto, e para os components 
 
 - dentro do onSubmit do Formik para cadastrar um usuario no firebase,  adicione
-  ```js
+```js
 
 onSubmit: async (values, form) => {
                 try {
@@ -183,16 +183,15 @@ onSubmit: async (values, form) => {
 
 - Adicionando codigo na config do firebase
   
-    ```js
+```js
   
    export const persistenceMode = firebaseClient.auth.Auth.Persistence.LOCAL
-
-  )
+```
 
 - importando persistenceMode no index do Login
 
 - Adicionando na index do login 
-     "(
+```js
 
        useEffect(() => {
         check()
@@ -204,7 +203,7 @@ onSubmit: async (values, form) => {
         })
     }, [values.email, values.password])
 
-   ```
+```
 
 # Criando arquivo .env na raiz do projeto para guardar variaveis de ambiente
 - alterando no arquivo client do firebase 
