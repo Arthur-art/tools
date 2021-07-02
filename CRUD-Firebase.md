@@ -10,6 +10,7 @@
 - https://chakra-ui.com/docs/getting-started
 - yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
 - atualize a page _app.js "(
+```js
 
     import { ChakraProvider } from "@chakra-ui/react"
 
@@ -20,7 +21,7 @@
 }
 
 export default MyApp
-
+```
 )"
 
 # Montando o forms no index do projeto usando chakra documentation
@@ -33,8 +34,7 @@ export default MyApp
 # Configurando o formik 
 - adicionando codigo na page onde formik sera usado para manipular os valores
 - import { useFormik } from "formik";
-
-"(
+```js
    const {
         values,
         errors,
@@ -56,10 +56,11 @@ export default MyApp
             },
 
         })
-)"
+        ```
 - Adicionando handleChange, values.email, values.password, values.endereco nos inputs dos campos que serão salvos no formik
-- Exemplo 
-"(
+- Exemplo :
+```js
+
 
             <FormControl isRequired id="email">
             <FormLabel>E-mail</FormLabel>
@@ -67,13 +68,12 @@ export default MyApp
              {touched.email && (<FormHelperText textColor="#e74c3c"> {errors.email}</FormHelperText>)}
             </FormControl>
 
-
-)"
+```
 
 # Acessando o git da doc do yup
 - https://github.com/jquense/yup
-- adicionando o bloco de  codigo do schema"(
-    
+- adicionando o bloco de  codigo do schema:
+    ```js
     const validationSchema = yup.object().shape({
   email: yup
     .string()
@@ -82,8 +82,7 @@ export default MyApp
   password: yup.string().required("Preenchimento obrigatório!"),
   username: yup.string().required("Preenchimento obrigatório!"),
 });
-
-)"
+```
 
 # Instalando o firebase (Para o banco de dados e para autenticacao)
 
@@ -99,8 +98,8 @@ export default MyApp
 
 # Configurando o firebase
 - Adicionando pastas "config/firebase/" com um arquivo "index.js" na pasta raiz do projeto
-- Adicionando codigo ao arquivo index da pasta firebase - "(
-
+- Adicionando codigo ao arquivo index da pasta firebase - 
+```js
 import firebaseClient from 'firebase/app'
 import 'firebase/auth'
 const firebaseConfig = {
@@ -112,7 +111,7 @@ const firebaseConfig = {
     appId: process.env.NEXT_PUBLIC_APP_ID,
     measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
-)"
+```
 - Para evitar que o firebase seja recriado pelo hot reload do next 
   - const app = firebaseClient.apps.length ? firebaseClient.app() : firebaseClient.initializeApp(firebaseConfig);
 
@@ -120,7 +119,7 @@ const firebaseConfig = {
 - import firebase para o index do projeto, e para os components 
 
 - dentro do onSubmit do Formik para cadastrar um usuario no firebase,  adicione
-  - "(
+  ```js
 
 onSubmit: async (values, form) => {
                 try {
@@ -131,14 +130,13 @@ onSubmit: async (values, form) => {
                     console.log('erro', error)
                 }
             },
-
-)"
+```
 
 
 # Configurando formik na page Login
 
 - adicione o codigo na page do login 
-  - "(
+```js
 
 
     const [newValue, setNewValue] = useState("")
@@ -177,7 +175,7 @@ onSubmit: async (values, form) => {
     }, [values.email, values.password])
 
 
-  )"
+```
 
   
 # Verificacao de persistencia do Auth no arquivo client do firebase
@@ -185,7 +183,9 @@ onSubmit: async (values, form) => {
 - https://firebase.google.com/docs/auth/web/auth-state-persistence?authuser=0
 
 - Adicionando codigo na config do firebase
-  - (
+  
+    ```js
+  
    export const persistenceMode = firebaseClient.auth.Auth.Persistence.LOCAL
 
   )
@@ -205,11 +205,11 @@ onSubmit: async (values, form) => {
         })
     }, [values.email, values.password])
 
-    )"
+   ```
 
 # Criando arquivo .env na raiz do projeto para guardar variaveis de ambiente
-- alterando no arquivo client do firebase "(
-
+- alterando no arquivo client do firebase 
+```js
   const firebaseConfig = {
     apiKey: process.env.NEXT_PUBLIC_API_KEY,
     authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
@@ -220,7 +220,7 @@ onSubmit: async (values, form) => {
     measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
-)"
+```
 
 - Guardando os dados das variaveis acima no arquivo .env 
 
