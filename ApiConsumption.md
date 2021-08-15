@@ -1,6 +1,6 @@
 # Maneiras de se consumir uma Api:
 
-# Modelo SSR(server-side rendering) usando useEffect:
+# Modelo com fetch e SSR(server-side rendering):
 ```js
  useEffect(() => {
     fetch('http://localhost:3333/episodes').then((response) => {
