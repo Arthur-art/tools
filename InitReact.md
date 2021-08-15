@@ -1,7 +1,7 @@
 # Iniciando o projeto com react
 
 - yarn create react-app (nome-app) --template=typescript
-
+- npm install @types/react
 - yarn start
 
 # Iniciando o projeto com next
