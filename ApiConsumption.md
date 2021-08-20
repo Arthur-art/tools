@@ -62,11 +62,9 @@ import axios from 'axios'
 export const api = axios.create({
     baseURL: 'http://localhost:3333/'
 })
-
-)
-- Atualizando requisição SSG (
-
-  export const getStaticProps: GetStaticProps = async () => {
+```
+```js
+export const getStaticProps: GetStaticProps = async () => {
   const { data } = await api.get('episodes', {
     params: {
       _limit: 12,
@@ -82,5 +80,4 @@ export const api = axios.create({
 
     revalidate: 60 * 60 * 8,
   }
-  ```
-)
+ ```
