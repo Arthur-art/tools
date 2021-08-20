@@ -1,6 +1,6 @@
 # Maneiras de se consumir uma Api:
 
-# Modelo com fetch e SSR(server-side rendering):
+# Modelo com fetch:
 ```js
  useEffect(() => {
     fetch('http://localhost:3333/episodes').then((response) => {
@@ -10,12 +10,12 @@
         console.log(data)
       })
   }, [])
-
+```
 
 # Modelo SSR(server side redering), requisição feita na camada do next
 
 - Dentro de qualquer arquivo na pasta pages export uma function chamada (getServerSideProps)
-     
+```js   
     export async function getServerSideProps(){
         const response = await fetch('http://localhost:3333/episodes')
         const data = await response.json()
@@ -29,7 +29,7 @@
 
 ```
 
-# Modelo SSG(static site generators), requisição feita na camada do next
+# Modelo SSG(static site generators), requisição feita na camada do next com fetch
 
 - Dentro de qualquer arquivo na pasta pages export uma function chamada (getStaticProps)
 
@@ -57,7 +57,7 @@
 - criando no src uma pasta services/api.ts(
 
 ```js
-  import axios from 'axios'
+import axios from 'axios'
 
 export const api = axios.create({
     baseURL: 'http://localhost:3333/'
