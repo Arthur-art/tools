@@ -23,7 +23,7 @@
 
 - Execute o projeto CRM.Suporte.API junto com docker para verificar se se a solution ja esta funcionando
 
-- Para passar pelo Autorized é necessário pegar um token com o postman
+- Para passar pelo Autorized atributo é necessário pegar um token com o postman
 
 - Copiar o idToken para colocar no Authorization do swagger
 
