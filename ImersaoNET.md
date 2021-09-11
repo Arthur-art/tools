@@ -112,7 +112,10 @@ o necessário
 
 - No Constructor MinhaController sera criado uma variavel commandInput, esse commandInput sera enviado para o mediator, e sera retornado uma resposta
 
-- Apos criar as 4 classes do design pattern do command e tipar corretamente as mesmas, o mediator ja sabe que deve chamar o commandHandler e seguir o fluxo perfeito entre as 4 classes
+- Apos criar as 4 classes do design pattern do command e tipar corretamente as mesmas, o mediator ja sabe que deve chamar o commandHandler e também sabe que 
+ele deve retornar um commanResult
+
+- A camada de API deve conter somente essa implementação, não deve possuir regra de negocio, apenas consumir e retornar dados
 
 
 # Arquivo MinhaController:
@@ -202,4 +205,27 @@ namespace CRM.Suporte.Application.Commands.CreatePessoa
 }
 
 ```
+
+# Implementando o CommandHandler
+
+- Na camada de domain é onde deve estar toda a regra de negocio da aplicação, baseado na regra de domain driven design do projeto
+
+- Na camada de domain crie uma pasta do dominio a ser criado, "PessoaAggregate" e dentro da pasta uma classe que sera
+a raiz de agregação pessoa, "Pessoa.cs"
+
+
+# Arquivo Pessoa.cs dentro de PessoaAggregate na camada de domínio:
+
+```js
+using CRM.Kernel.Domain;
+
+namespace CRM.Suporte.Domain.PessoaAggregate
+{
+    //AuditableEntity é uma classe base para as entidades de um dominio que contem informaçães para auditoria da entidade 
+    public class Pessoa : AuditableEntity, IAggregateRoot
+    {
+    }
+}
+```
+
 
