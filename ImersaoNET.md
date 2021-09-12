@@ -266,3 +266,43 @@ using CRM.Suporte.Domain.PessoaAggregate;
 
 public DbSet<Pessoa> Pessoas { get; set; }
 ```
+
+- Desenvolver o mapeamento de "Pessoa" na pasta Maps da camada de Infra, Criar uma pasta "PessoaAggregate" dentro da pasta Maps e adicionar uma
+Classe PessoaMap
+
+- Essa classe PessoaMap serve para mapear  a entidade no banco de dados usando o entity framework core:
+
+# Arquivo PessoaMap dentro da pasta Maps na camada de Infra
+
+```c#
+using CRM.Kernel.Infra;
+using CRM.Suporte.Domain.PessoaAggregate;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace CRM.Suporte.Infra.Maps.PessoaAggregate
+{
+   public class PessoaMap : AuditableEntityMap<Pessoa>
+    {
+        public override void Configure(EntityTypeBuilder<Pessoa> builder)
+        {
+            //Mapeamento os dois campos que a classe pessoa Possui
+
+            //Mapeando o field de Nome
+            builder
+                .Property(pessoa => pessoa.Nome)
+                .HasColumnType("varchar(100)")
+                .IsRequired();
+
+            //Mapeando o field de Idade
+            builder
+                .Property(pessoa => pessoa.Idade)
+                .IsRequired();
+
+            base.Configure(builder);
+        }
+    }
+}
+```
+
+
