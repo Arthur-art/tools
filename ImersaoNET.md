@@ -421,3 +421,109 @@ services.AddScoped<IPessoaRepository, PessoaRepository>();
 - No visualStudio vá em tools -> NuGet Package Manager -> Package Manager Console, no console setar em default project o projeto de infra e digitar no console add-migration AddPessoa para rodar a migration e criar as tabelas no banco de dados
 
 - A aplicação está pronta para testar apos isso!
+
+
+# Desenvolvendo um endpoint para resgatar esses dados
+
+- No arquivo MinhaController escrever um novo método
+  
+```c#
+  [HttpGet("pessoa/{pessoaId:guid}")]
+        public async Task<IActionResult> GetPessoa(Guid pessoaId, CancellationToken cancellationToken)
+        {
+            var getPessoaQueryInput = new GetPessoaQueryInput(pessoaId);
+            var getPessoaQueryResult = await _mediator.Send(getPessoaQueryInput);
+
+            return HandleMediatorResult(getPessoaQueryResult);
+        }
+```
+
+- Criar uma nova pasta GetPessoa dentro de Querys na camada de Application, adicionar 3 classes - Input, Handle, Result
+
+# Arquivo GetPessoaQueryHandler dentro de GetPessoa:
+
+```c#
+using CRM.Kernel.Application;
+using CRM.Suporte.Domain.PessoaAggregate;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Net;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace CRM.Suporte.Application.Queries.GetPessoa
+{
+    public class GetPessoaQueryHandler : IQueryHandler<GetPessoaQueryInput, GetPessoaQueryResult>
+    {
+        /*
+         * 1 Repository
+         */
+
+        private readonly IPessoaRepository _pessoaRepository;
+
+        public GetPessoaQueryHandler(IPessoaRepository pessoaRepository)
+        {
+            _pessoaRepository = pessoaRepository ?? throw new ArgumentNullException(nameof(pessoaRepository));
+        }
+        public async Task<GetPessoaQueryResult> Handle(GetPessoaQueryInput query, CancellationToken cancellationToken)
+        {
+            /*
+             * 1 Chamar o repository.GetAsNoTracking do repositorio para obeter uma referencia da entidade do repositorio
+             * 2 return query result
+             */
+
+            var existingPessoa = await _pessoaRepository
+                .GetAsNoTracking(pessoa => pessoa.Id == query.PessoaId)
+                .SingleOrDefaultAsync(cancellationToken);
+
+            if(existingPessoa is null)
+            {
+                return new GetPessoaQueryResult().WithHttpStatusCode(HttpStatusCode.NotFound) as GetPessoaQueryResult;
+            }
+
+            return new GetPessoaQueryResult
+            {
+                Nome = existingPessoa.Nome,
+                Idade = existingPessoa.Idade
+            };
+        }
+    }
+}
+```
+
+# Arquivo GetPessoaQueryInput dentro de GetPessoa
+
+```c#
+using CRM.Kernel.Application;
+using System;
+
+namespace CRM.Suporte.Application.Queries.GetPessoa
+{
+    public class GetPessoaQueryInput : QueryInput<GetPessoaQueryResult>
+    {
+        public Guid PessoaId { get; }
+
+        public GetPessoaQueryInput(Guid id)
+        {
+            PessoaId = id;
+        }
+    }
+}
+```
+
+# Arquivo GetPessoaQueryResult dentro de GetPessoa
+
+```c#
+using CRM.Kernel.Application;
+using CRM.Suporte.Domain.ImportedFileAggregate;
+
+namespace CRM.Suporte.Application.Queries.GetPessoa
+{
+    public class GetPessoaQueryResult : QueryResult
+    {
+
+        public string Nome { get; init; }
+        public int Idade { get; init; }
+    }
+}
+```
