@@ -32,7 +32,7 @@
 
 # Arquivo MinhaController na pasta controllers na camada de API:
 
-```js
+```c#
 using CRM.Kernel.API;
 using CRM.Kernel.Application;
 using CRM.Suporte.API.Requests;
@@ -75,7 +75,7 @@ namespace CRM.Suporte.API.Controllers
 
 # Arquivo IncludePessoaRequest dentro da pasta Requests na camada de API:
   
-```js
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -120,7 +120,7 @@ ele deve retornar um commanResult
 
 # Arquivo MinhaController:
 
-```js
+```c#
 using CRM.Kernel.API;
 using CRM.Kernel.Application;
 using CRM.Suporte.API.Requests;
@@ -183,7 +183,7 @@ namespace CRM.Suporte.API.Controllers
 
 # Arquivo CommandInput dentro da pasta CreatePessoa dentro de commands na camada de Application:
 
-```js
+```c#
 using CRM.Kernel.Application;
 using Microsoft.AspNetCore.Http;
 
@@ -213,10 +213,11 @@ namespace CRM.Suporte.Application.Commands.CreatePessoa
 - Na camada de domain crie uma pasta do dominio a ser criado, "PessoaAggregate" e dentro da pasta uma classe que sera
 a raiz de agregação pessoa, "Pessoa.cs"
 
+- A ideia é que dentro da classe Pessoa fique toda regra de negócio referente a lógica de dominio
 
 # Arquivo Pessoa.cs dentro de PessoaAggregate na camada de domínio:
 
-```js
+```c#
 using CRM.Kernel.Domain;
 
 namespace CRM.Suporte.Domain.PessoaAggregate
@@ -224,8 +225,44 @@ namespace CRM.Suporte.Domain.PessoaAggregate
     //AuditableEntity é uma classe base para as entidades de um dominio que contem informaçães para auditoria da entidade 
     public class Pessoa : AuditableEntity, IAggregateRoot
     {
+        public Pessoa(string nome, int idade)
+        {
+            Nome = nome;
+            Idade = idade;
+        }
+
+        public string Nome { get; }
+         public int Idade { get; }
     }
 }
 ```
 
+- Na camada de Infra é onde se lida com o banco de dados
+  
+- A ideia dessa camada é unificar qualquer logica de negocio possivel referente a commitar mudanças de estado de um dado atravez de uma classe
 
+- Dentro da pasta Repositories, criar uma nova classe PessoaRepository.cs
+
+# Arquivo PessoaRepository dentro da pasta Repositories na camada de Infra
+
+```c#
+using CRM.Kernel.Infra;
+using CRM.Suporte.Domain.PessoaAggregate;
+using System.Linq.Expressions;
+
+namespace CRM.Suporte.Infra.Repositories
+{
+    public class PessoaRepository : GenericRepository<Pessoa>
+    {
+        public PessoaRepository(EFCoreContext context) : base(context) =>  Expression.Empty();
+        
+    }
+}
+```
+
+- No Arquivo context na camada de Infra é necessário criar um DbSet de Pessoa seguindo o padrão de DbSet ja criados:
+```c#
+using CRM.Suporte.Domain.PessoaAggregate;
+
+public DbSet<Pessoa> Pessoas { get; set; }
+```
