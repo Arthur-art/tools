@@ -127,7 +127,7 @@ using CRM.Suporte.API.Requests;
 using CRM.Suporte.Application.Commands.CreatePessoa;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System;   
+using System;
 using System.Threading.Tasks;
 
 namespace CRM.Suporte.API.Controllers
@@ -161,19 +161,29 @@ namespace CRM.Suporte.API.Controllers
         //adicionando record como parametro do método que ira usa-lo para consumir os dados
         public async Task<IActionResult> CreatePessoa(CreatePessoaRequest createPessoaRequest)
         {
-            //  return Ok("Passei aqui");
-
+            // return Ok("oi");
+             
             /*
-             *1-  Criar um commandInput
-             *2-  Enviar o commandInput pro mediator
-             *3-  Retornar uma resposta do envio do command
+             * API Layer
+             * criar um command input
+             * enviar o command input para o mediator
+             * retornar a resposta do envio do command
+             * 
+             * Application Layer
+             * Implementar o command handler
+             * 
+             * Domain Layer
+             * Entities (domain logic)
+             * 
+             * Infrastructure Layer
+             * Database
              */
 
-            // 1 - CommandInput
+            /*1 - CommandInput*/
             var createPessoaCommandInput = new CreatePessoaCommandInput(createPessoaRequest.Nome, createPessoaRequest.Idade);
-            // 2 - mediator sera responsavel por enviar o commandInput e sera responsavel por delegar a execução do command
+            /*2 - mediator sera responsavel por enviar o commandInput e sera responsavel por delegar a execução do command*/
             var createPessoaCommandResult = await _mediator.Send(createPessoaCommandInput);
-            //3 - é retornado um metodo herdado da classe BaseController
+            /*3 - é retornado um metodo herdado da classe BaseController*/
             return HandleMediatorResult(createPessoaCommandResult);
         }
 
@@ -206,7 +216,7 @@ namespace CRM.Suporte.Application.Commands.CreatePessoa
 
 ```
 
-# Implementando o CommandHandler
+# Desenvolvendo o CommandHandler e CommandResult
 
 - Na camada de domain é onde deve estar toda a regra de negocio da aplicação, baseado na regra de domain driven design do projeto
 
@@ -265,6 +275,8 @@ namespace CRM.Suporte.Infra.Repositories
 using CRM.Suporte.Domain.PessoaAggregate;
 
 public DbSet<Pessoa> Pessoas { get; set; }
+
+modelBuilder.ApplyConfiguration(new PessoaMap());
 ```
 
 - Desenvolver o mapeamento de "Pessoa" na pasta Maps da camada de Infra, Criar uma pasta "PessoaAggregate" dentro da pasta Maps e adicionar uma
@@ -349,21 +361,63 @@ namespace CRM.Suporte.Application.Commands.CreatePessoa
         public async Task<CreatePessoaCommandResult> Handle(CreatePessoaCommandInput command, CancellationToken cancellationToken)
 		{
 			/*
-			 * Criar uma nova instancia da entidade
-			 * adicionar ao repository
-			 * commitar as alteracoes no repository
-			 * retornar o commandResult
+			 * 1 Criar uma nova instancia da entidade
+			 * 2 Adicionar ao repository
+			 * 3 Commitar as alteracoes no repository
+			 * 4 Retornar o commandResult
 			 */
 
 
-			//Instancia da entidade Pessoa para guardar no banco de dados
+			//1 Instancia da entidade Pessoa para guardar no banco de dados
 			var pessoa = new Pessoa(
 				nome: command.Nome,
 				idade: command.Idade
 				);
+
+			//2 Chamar o repository
+			await _pessoaRepository.AddAsync(pessoa, cancellationToken);
+
+			//3 Commitar as alteracoes
+			await _pessoaRepository.UnitOfWork.CommitAsync(cancellationToken);
+
+			//4 Retornar um commandResult passando o id da pessoa criado como parametro
+			//Esse id vem de dentro de AuditableEntity
+			return new CreatePessoaCommandResult(pessoa.Id);
 		}
 
 	}
 }
 ```
 
+# Arquivo CommandResult:
+
+```c#
+using CRM.Kernel.Application;
+using System;
+
+namespace CRM.Suporte.Application.Commands.CreatePessoa
+{
+    public class CreatePessoaCommandResult : CommandResult
+    {
+        public CreatePessoaCommandResult(Guid pessoaId)
+        {
+            PessoaId = pessoaId;
+        }
+
+        //Guid é uma implementação da microsoft de um UUID
+        public Guid PessoaId { get; }
+    }
+}
+```
+
+- No arquivo Startup.cs na camada de API deve ser implementado uma classe da interface IPessoaRepository
+
+- Para quando o framework tentar criar uma instancia de CreatePessoaCommandHandler ele sabera que essa classe possui essa dependencia
+
+```c#
+services.AddScoped<IPessoaRepository, PessoaRepository>();
+```
+
+- No visualStudio vá em tools -> NuGet Package Manager -> Package Manager Console, no console setar em default project o projeto de infra e digitar no console add-migration AddPessoa para rodar a migration e criar as tabelas no banco de dados
+
+- A aplicação está pronta para testar apos isso!
