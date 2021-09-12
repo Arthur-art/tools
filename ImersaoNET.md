@@ -252,7 +252,7 @@ using System.Linq.Expressions;
 
 namespace CRM.Suporte.Infra.Repositories
 {
-    public class PessoaRepository : GenericRepository<Pessoa>
+    public class PessoaRepository : GenericRepository<Pessoa>, IPessoaRepository
     {
         public PessoaRepository(EFCoreContext context) : base(context) =>  Expression.Empty();
         
@@ -305,4 +305,65 @@ namespace CRM.Suporte.Infra.Maps.PessoaAggregate
 }
 ```
 
+- Seguindo o princípio do SOLID inversão de dependência, "Duas entidades do sistema não devem ser acopladas entre si"
+ - Na pasta de PessoaAggregate na camada de domínio - new interface - IPessoaRepository:
+
+- Esta implementação serve para que em qualquer ponto do codigo que for preciso acessar o repositorio de pessoa, o repositorio
+Não seja acessado diretamente, sera chamado a interface e sera acessado os metodos do GenericRepository atravez dessa interface
+
+```c#
+using CRM.Kernel.Domain;
+
+namespace CRM.Suporte.Domain.PessoaAggregate
+{
+    public interface IPessoaRepository : IGenericRepository<Pessoa>
+    {
+    }
+}
+```
+
+- Enfim no arquivo CreatePessoaCommandHandler.cs é instanciado a entidade Pessoa para guardar no banco de dados
+
+# Arquivo CreatePessoaCommandHandler.cs:
+
+```c#
+using CRM.Kernel.Application;
+using CRM.Suporte.Domain.PessoaAggregate;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace CRM.Suporte.Application.Commands.CreatePessoa
+
+{
+	public class CreatePessoaCommandHandler : ICommandHandler<CreatePessoaCommandInput, CreatePessoaCommandResult>
+	{
+		private readonly IPessoaRepository _pessoaRepository;
+
+        public CreatePessoaCommandHandler(IPessoaRepository pessoaRepository)
+        {
+			//Verificando se o pessoaRepository vem como null
+            _pessoaRepository = pessoaRepository ?? throw new ArgumentNullException(nameof(pessoaRepository));
+        }
+
+        public async Task<CreatePessoaCommandResult> Handle(CreatePessoaCommandInput command, CancellationToken cancellationToken)
+		{
+			/*
+			 * Criar uma nova instancia da entidade
+			 * adicionar ao repository
+			 * commitar as alteracoes no repository
+			 * retornar o commandResult
+			 */
+
+
+			//Instancia da entidade Pessoa para guardar no banco de dados
+			var pessoa = new Pessoa(
+				nome: command.Nome,
+				idade: command.Idade
+				);
+		}
+
+	}
+}
+```
 
