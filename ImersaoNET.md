@@ -1,32 +1,40 @@
 # Desenvolvendo um endpoint
 
-- Inicie o projeto abrindo uma solução - microserviço -  suporte
-
+- Inicie o projeto abrindo uma solução - micro serviço -  suporte
 - Endpoints ficam dentro da pasta controller, basicamente uma classe dentro da camada de API que herda da classe BaseController
-
 - Dentro da pasta controller
   - Add new item - Class - MinhaController
-
 - Esta classe devera ser herdada da classe BaseController dentro do namespace Kernel-API
+- Copie uma requisição do tipo POST de algum controller já pronto para o reaproveitamento de código e para manter o Design Pattern
+- Na camada de API crie uma pasta Requests para o desenvolvimento de um DTO, um conceito de transferência de dados entre camadas dentro do projeto
+- Na pasta Requests adicione uma nova classe chamada - IncludePessoaRequest:
 
-- Copie uma requisicao do tipo POST de algum controller ja pronto para o reaproveitamento de codigo e para manter o Design Pattern
+# Arquivo IncludePessoaRequest dentro da pasta Requests na camada de API:
 
-- Na camada de API crie uma pasta Requests para o desenvolvimento de um DTO, um conceito de transferencia de dados entre camadas dentro do projeto
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-- Na pasta Requests adicione uma nova classe chamada - IncludePessoaRequest
+namespace CRM.Suporte.API.Requests
+{
+    //Este record sera necessario para criar uma classe imutavel que sera usada apenas para transferir dados de uma camada para outra
+    public record CreatePessoaRequest(
+        string Nome,
+        int Idade
+     );
+}
+```
 
-- Este record sera necessario para criar uma classe que sera usada apenas para transferir dados de uma camada para outra
 
-- No arquivo MinhaController adicione esse record como parametro do método que ira usa-lo para consumir esses dados
 
+- Este record será necessário para criar uma classe que será usada apenas para transferir dados de uma camada para outra
+- No arquivo MinhaController adicione esse record como parâmetro do método que ira usa-lo para consumir esses dados
 - Dentro do escopo da classe adicione - return Ok("Passei aqui");
-
-- Execute o projeto CRM.Suporte.API junto com docker para verificar se se a solution ja esta funcionando
-
+- Execute o projeto CRM.Suporte.API junto com docker para verificar se se a solution já esta funcionando
 - Para passar pelo Autorized atributo é necessário pegar um token com o postman
-
 - Copiar o idToken para colocar no Authorization do swagger
-
 - Execute o request para verificar o retorno da aplicação
 
 
@@ -73,47 +81,27 @@ namespace CRM.Suporte.API.Controllers
 }
 ```
 
-# Arquivo IncludePessoaRequest dentro da pasta Requests na camada de API:
-  
-```c#
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace CRM.Suporte.API.Requests
-{
-    //Este record sera necessario para criar uma classe imutavel que sera usada apenas para transferir dados de uma camada para outra
-    public record CreatePessoaRequest(
-        string Nome,
-        int Idade
-     );
-}
-```
-
-# Desenvolvendo um command
+# 	Desenvolvendo um command
 
 - Na pasta Commands - crie uma nova pasta chamada - CreatePessoa
 
-- A ideia é que o command não tenha lógica de regra de negócio alguma, um command irá apenas orquestrar uma execução de modulos menores do sistema
+- A ideia é que o command não tenha lógica de regra de negócio alguma, um command irá apenas orquestrar uma execução de módulos menores do sistema
 
 - Padrão de implementação especifico das classes de um command - CommandHandler - CommandInput - CommandResult - CommandValidator
 
-- Dica de implementação - Entrar em uma pasta de Commands, copiar os 4 aquivos padrão e colar na pasta do novo command e renomear os arquivos e as classes alterando somente
-o necessário
+- Dica de implementação - Entrar em uma pasta de Commands, copiar os 4 arquivos padronizados e colar na pasta do novo command e renomear os arquivos e as classes alterando somente o necessário
 
 - O commandHandler serve para disponibilizar um implementação que vai reagir a um commandInput
 
 - O controller ira gerar um commandInput baseado no request que foi feito no endpoint com os dados da requisição
 
-- Os dados enviados na request são recebidos na Request folder, no CreatePessoaRequest que esta no parametro da controller
+- Os dados enviados na request são recebidos na Request folder, no CreatePessoaRequest que esta no parâmetro da controller
 
-- Esses dados são passados para a camada de application atraves de um commandInput
+- Esses dados são passados para a camada de application através de um commandInput
 
-- No Constructor MinhaController sera criado uma variavel commandInput, esse commandInput sera enviado para o mediator, e sera retornado uma resposta
+- No Constructor MinhaController sera criado uma variavel commandInput, esse commandInput será enviado para o mediator, e será retornado uma resposta
 
-- Apos criar as 4 classes do design pattern do command e tipar corretamente as mesmas, o mediator ja sabe que deve chamar o commandHandler e também sabe que 
-ele deve retornar um commanResult
+- Após criar as 4 classes do design pattern do command e tipar corretamente as mesmas, o mediator já sabe que deve chamar o commandHandler e também sabe que ele deve retornar um commandResult
 
 - A camada de API deve conter somente essa implementação, não deve possuir regra de negocio, apenas consumir e retornar dados
 
@@ -320,8 +308,8 @@ namespace CRM.Suporte.Infra.Maps.PessoaAggregate
 - Seguindo o princípio do SOLID inversão de dependência, "Duas entidades do sistema não devem ser acopladas entre si"
  - Na pasta de PessoaAggregate na camada de domínio - new interface - IPessoaRepository:
 
-- Esta implementação serve para que em qualquer ponto do codigo que for preciso acessar o repositorio de pessoa, o repositorio
-Não seja acessado diretamente, sera chamado a interface e sera acessado os metodos do GenericRepository atravez dessa interface
+- Esta implementação serve para que em qualquer ponto do código que for preciso acessar o repositório de pessoa, o repositório
+Não seja acessado diretamente, será chamado a interface e será acessado os métodos do GenericRepository através dessa interface
 
 ```c#
 using CRM.Kernel.Domain;
@@ -420,7 +408,7 @@ services.AddScoped<IPessoaRepository, PessoaRepository>();
 
 - No visualStudio vá em tools -> NuGet Package Manager -> Package Manager Console, no console setar em default project o projeto de infra e digitar no console add-migration AddPessoa para rodar a migration e criar as tabelas no banco de dados
 
-- A aplicação está pronta para testar apos isso!
+- A aplicação está pronta para testar após isso!
 
 
 # Desenvolvendo um endpoint para resgatar esses dados
@@ -527,3 +515,4 @@ namespace CRM.Suporte.Application.Queries.GetPessoa
     }
 }
 ```
+- token: Bearer eyJ4NXQiOiJNell4TW1Ga09HWXdNV0kwWldObU5EY3hOR1l3WW1NNFpUQTNNV0kyTkRBelpHUXpOR00wWkdSbE5qSmtPREZrWkRSaU9URmtNV0ZoTXpVMlpHVmxOZyIsImtpZCI6Ik16WXhNbUZrT0dZd01XSTBaV05tTkRjeE5HWXdZbU00WlRBM01XSTJOREF6WkdRek5HTTBaR1JsTmpKa09ERmtaRFJpT1RGa01XRmhNelUyWkdWbE5nX1JTMjU2IiwiYWxnIjoiUlMyNTYifQ.eyJhdF9oYXNoIjoiSkQxaFl2SVNoMnBqd0xDeGdKT2FOdyIsImF1ZCI6IjRER1BhRmpEbFZ2VVYyYVplWjZqTHIwYVhuc2EiLCJzdWIiOiJvcGVyYWRvcjIiLCJ1cG4iOiIwYmZjYjlhOS05Mzc4LTRlZWEtOTk4YS0xODI0MTM5YWEwODIiLCJuYmYiOjE2MzE1NTM1NjksImF6cCI6IjRER1BhRmpEbFZ2VVYyYVplWjZqTHIwYVhuc2EiLCJhbXIiOlsicGFzc3dvcmQiXSwiaXNzIjoiaHR0cHM6XC9cL3dzby5kZXYucGFzY2hvYWxvdHRvLmNvbS5icjo0NDNcL29hdXRoMlwvdG9rZW4iLCJuYW1lIjoib3BlcmFkb3IyIFRFU1RFIiwiZXhwIjoxNjMxNjM5OTY5LCJpYXQiOjE2MzE1NTM1Njl9.DML6coGoo8XzHuEo2wVNFajuzKTr-EFGjUbj4pMybcP7C0D-wRkhtbIBzmS09uIMJdmI0JJ2M99Aq3rn-wRtD8rhq35ny_n3irBHhctdL0PfbPsY7HlMMw3FzHO1rbolI-sF3vPhmKA3lq_loJ9UUuchQukyIAz3Yy9vw4adqEEYnvSfLAB3cnUlOxf5jBRtmZsMRF4nJTGu_Yypjh3eGRFkgMoDnJXfPko17UdryfOLpu4lR-ZBBql1w2CctoBu46o4wEzAuZifa-2g3lzLT4k5hfuUpEgQFs-L6ax3zt_3PVzvKHuqvYCMZ_UXvKg9DxHb4s1vbds0BvUxUiVpyw
