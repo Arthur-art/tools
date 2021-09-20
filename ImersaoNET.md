@@ -1,4 +1,4 @@
-# Desenvolvendo um endpoint
+# 	Desenvolvendo um endpoint
 
 - Inicie o projeto abrindo uma solução - micro serviço -  suporte
 - Endpoints ficam dentro da pasta controller, basicamente uma classe dentro da camada de API que herda da classe BaseController
@@ -207,10 +207,9 @@ namespace CRM.Suporte.Application.Commands.CreatePessoa
 # Desenvolvendo o CommandHandler e CommandResult
 
 - Na camada de domain é onde deve estar toda a regra de negocio da aplicação, baseado na regra de domain driven design do projeto
-
 - Na camada de domain crie uma pasta do dominio a ser criado, "PessoaAggregate" e dentro da pasta uma classe que sera
 a raiz de agregação pessoa, "Pessoa.cs"
-
+- Na mesma pasta crie uma interface de PessoaRepository
 - A ideia é que dentro da classe Pessoa fique toda regra de negócio referente a lógica de dominio
 
 # Arquivo Pessoa.cs dentro de PessoaAggregate na camada de domínio:
@@ -235,10 +234,23 @@ namespace CRM.Suporte.Domain.PessoaAggregate
 }
 ```
 
-- Na camada de Infra é onde se lida com o banco de dados
-  
-- A ideia dessa camada é unificar qualquer logica de negocio possivel referente a commitar mudanças de estado de um dado atravez de uma classe
+# Arquivo IPessoaRepository.cs dentro de PessoaAggregate na camada de domínio:
 
+```c#
+using CRM.Kernel.Domain;
+
+namespace CRM.Suporte.Domain.PessoaAggregate
+{
+    public interface IPessoaRepository : IGenericRepository<Pessoa>
+    {
+    }
+}
+```
+
+
+
+- Na camada de Infra é onde se lida com o banco de dados
+- A ideia dessa camada é unificar qualquer logica de negocio possível referente a commitar mudanças de estado de um dado através de uma classe
 - Dentro da pasta Repositories, criar uma nova classe PessoaRepository.cs
 
 # Arquivo PessoaRepository dentro da pasta Repositories na camada de Infra
@@ -400,7 +412,7 @@ namespace CRM.Suporte.Application.Commands.CreatePessoa
 
 - No arquivo Startup.cs na camada de API deve ser implementado uma classe da interface IPessoaRepository
 
-- Para quando o framework tentar criar uma instancia de CreatePessoaCommandHandler ele sabera que essa classe possui essa dependencia
+- Para quando o framework tentar criar uma instancia de CreatePessoaCommandHandler ele saberá que essa classe possui essa dependência
 
 ```c#
 services.AddScoped<IPessoaRepository, PessoaRepository>();
@@ -426,7 +438,7 @@ services.AddScoped<IPessoaRepository, PessoaRepository>();
         }
 ```
 
-- Criar uma nova pasta GetPessoa dentro de Querys na camada de Application, adicionar 3 classes - Input, Handle, Result
+- Criar uma nova pasta GetPessoa dentro de Queries na camada de Application, adicionar 3 classes - Input, Handle, Result
 
 # Arquivo GetPessoaQueryHandler dentro de GetPessoa:
 
