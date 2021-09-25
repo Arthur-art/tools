@@ -43,11 +43,11 @@
 # Reforçando aprendizado em JavaScript na codecademy
 - https://www.codecademy.com/learn/introduction-to-javascript
 
-# Trabalhando com Typescript
-- https://www.codecademy.com/learn/learn-typescript
-
 # Aprendendo ReactJs do zero na codecademy
 - https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/why-react
+
+# Trabalhando com Typescript
+- https://www.codecademy.com/learn/learn-typescript
 
 # NLW 6 - Projeto feito do zero com reactjs Typescript
 - https://app.rocketseat.com.br/node/mission-react-js
