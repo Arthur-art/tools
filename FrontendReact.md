@@ -26,7 +26,7 @@
 # Trabalhando com a manipulação da DOM
 - https://app.rocketseat.com.br/discover/courses/track/preparacao-de-astronautas
 
-# Trabalhando com HTML,CSS e JavaScrit
+# Trabalhando com HTML,CSS e JavaScript
 - https://web.digitalinnovation.one/track/html-web-developer?tab=path
 
 # Trabalhando com repositorios GIT
