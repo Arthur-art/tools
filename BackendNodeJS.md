@@ -10,7 +10,7 @@
 - https://app.rocketseat.com.br/node/ambiente-de-dev-de-outro-mundo
 - https://app.rocketseat.com.br/node/terminal
 
-# Introdução a programção
+# Introdução a programação
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-programacao
 - https://app.rocketseat.com.br/node/guia-estelar-de-http
 
@@ -24,6 +24,17 @@
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-git-hub
 - Me adicione la :)
 	- https://github.com/Arthur-art
+# Aprendendo sobre HTTP
+- https://app.rocketseat.com.br/node/guia-estelar-de-http
+
+# Trabalhando com NodeJS puro
+- https://app.rocketseat.com.br/node/node-js-o-motor-da-nave
+
+# Integrando NodeJS com HTML
+- https://app.rocketseat.com.br/node/node-js-ejs-html-inteligente
+
+# Trabalhando com SQL
+- https://app.rocketseat.com.br/node/sql
 
 # Primeiro projeto feito do zero para praticar oque aprendeu
 - https://maratonadiscover.rocketseat.com.br/maratona/aula-01
