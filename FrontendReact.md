@@ -10,7 +10,7 @@
 - https://app.rocketseat.com.br/node/ambiente-de-dev-de-outro-mundo
 - https://app.rocketseat.com.br/node/terminal
 
-# Introdução a programção
+# Introdução a programação
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-programacao
 - https://app.rocketseat.com.br/node/guia-estelar-de-http
 
