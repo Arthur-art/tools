@@ -1,4 +1,4 @@
-# Esta documentação tem como objetivo traçar um mapa de aprendizado para aprender JavaScript, TypeScript, NodeJs e Express, para aqueles que pretendem seguir o caminho do backend NodeJs:
+# Esta documentação tem como objetivo traçar um mapa de aprendizado para aprender JavaScript, TypeScript, NodeJs com Express e banco de dados SQL, para aqueles que pretendem seguir o caminho do backend NodeJs:
 
 # Autor 
 - Arthur Teixeira Santos Silva
@@ -20,7 +20,7 @@
 # Trabalhando com repositorios GIT
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-git
 
-# Conhecendo o GitHub
+# Conhecendo o Github
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-git-hub
 - Me adicione la :)
 	- https://github.com/Arthur-art
