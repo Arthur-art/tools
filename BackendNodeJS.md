@@ -30,6 +30,9 @@
 # Trabalhando com NodeJS puro
 - https://app.rocketseat.com.br/node/node-js-o-motor-da-nave
 
+# Trabalhando com HTML
+- https://app.rocketseat.com.br/node/o-guia-estelar-de-html
+
 # Integrando NodeJS com HTML
 - https://app.rocketseat.com.br/node/node-js-ejs-html-inteligente
 
