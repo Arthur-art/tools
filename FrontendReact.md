@@ -1,5 +1,8 @@
 # Esta documentação tem como objetivo traçar um mapa de aprendizado para aprender JavaScript, TypeScript, ReactJS, para aqueles que pretendem seguir o caminho do frontend ReactJS
 
+
+# Obs: Certifique-se de possuir uma conta no Github para entrar no site da rocketseat via Github para ter acesso ao Discover;
+
 # Autor 
 - Arthur Teixeira Santos Silva
 - Github: https://github.com/Arthur-art
