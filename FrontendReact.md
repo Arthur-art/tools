@@ -3,6 +3,11 @@
 
 # Obs: Certifique-se de possuir uma conta no Github para entrar no site da rocketseat via Github para ter acesso ao Discover;
 
+# Conhecendo o GitHub
+- https://app.rocketseat.com.br/node/o-guia-estelar-de-git-hub
+- Me adicione la :)
+	- https://github.com/Arthur-art
+
 # Autor 
 - Arthur Teixeira Santos Silva
 - Github: https://github.com/Arthur-art
@@ -34,11 +39,6 @@
 
 # Trabalhando com repositorios GIT
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-git
-
-# Conhecendo o GitHub
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-git-hub
-- Me adicione la :)
-	- https://github.com/Arthur-art
 
 # Primeiro projeto feito do zero para praticar oque aprendeu
 - https://app.rocketseat.com.br/node/maratona-discover-edicao-01
