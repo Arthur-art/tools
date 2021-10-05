@@ -2,11 +2,6 @@
 
 # Obs: Certifique-se de possuir uma conta no Github para entrar no site da rocketseat via Github para ter acesso ao Discover;
 
-# Conhecendo o Github
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-git-hub
-- Me adicione la :)
-	- https://github.com/Arthur-art
-
 # Autor 
 - Arthur Teixeira Santos Silva
 - Github: https://github.com/Arthur-art
@@ -16,6 +11,11 @@
 # Configurando o ambiente 
 - https://app.rocketseat.com.br/node/ambiente-de-dev-de-outro-mundo
 - https://app.rocketseat.com.br/node/terminal
+
+# Conhecendo o Github
+- https://app.rocketseat.com.br/node/o-guia-estelar-de-git-hub
+- Me adicione la :)
+	- https://github.com/Arthur-art
 
 # Introdução a programação
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-programacao
