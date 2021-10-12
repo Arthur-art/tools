@@ -35,4 +35,4 @@ https://github.com/x-orpheus/catch-react-error/tree/master/src
 
 # Links para a documentação oficial de uma implementação do ErrorBoundary com Typescript:
 - https://github.com/bvaughn/react-error-boundary#installation
-
+- https://github.com/x-orpheus/catch-react-error
