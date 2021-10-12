@@ -20,14 +20,14 @@
 - Ao capturar o erro o component ErrorBoundary reenderiza um component a minha escolha, no lugar do component que poderia quebrar a página
 
 - Projeto pessoal:
-	- Exemplo com component jsx:
-```json
-https://github.com/Arthur-art/Reactjs-insights/blob/master/src/components/ErrorBoundary/index.jsx
-```
-	- Exemplo com component tsx:
-```json
-https://github.com/Arthur-art/ReactJs-TypeScript/blob/master/src/App.tsx
-```
+   - Exemplo com component jsx:
+
+- https://github.com/Arthur-art/Reactjs-insights/blob/master/src/components/ErrorBoundary/index.jsx
+
+   - Exemplo com component tsx:
+
+- https://github.com/Arthur-art/ReactJs-TypeScript/blob/master/src/App.tsx
+
 - Projeto público
 ```json
 https://github.com/x-orpheus/catch-react-error/tree/master/src
