@@ -15,6 +15,7 @@
 - ASP.NET Core Web API
 - Target Framework -> .NET 5.0(current)  para integrar com swagger 
 
+<<<<<<< Updated upstream
 # Trabalhando com controllers no dotnet
 
 - Uma controller herda de uma classe ControllerBase para lidar apenas com apis rest
@@ -255,3 +256,19 @@ namespace ApiRestDotnet.Model
 # Criando uma controller usando entity framework
 - Adicione uma controller com mouse direito na pasta de controllers
 - selecione Api Controller with actions, using Entity Framework
+=======
+# Criando a primeira requisição do tipo get
+```c#
+ [ApiController]
+    [Route("api-dotnet")]
+    public class WeatherForecastController : ControllerBase
+    {
+       
+       [HttpGet("obter-id/{id:int}")]
+       public ActionResult<string> Get(int id)
+        {
+            return $"Response => {id}";
+        }
+    }
+```
+>>>>>>> Stashed changes
