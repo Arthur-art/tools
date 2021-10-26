@@ -18,21 +18,16 @@
 # Exemplo do uso de um error boundary
 - Neste projeto eu implementei o error boundary afim de previnir que a página quebre ao intecionalmente tentar iterar em um array que no final retorna um null em vez de um objeto;
 - Ao capturar o erro o component ErrorBoundary reenderiza um component a minha escolha, no lugar do component que poderia quebrar a página
-
 - Projeto pessoal:
    - Exemplo com component jsx:
-
-- https://github.com/Arthur-art/Reactjs-insights/blob/master/src/components/ErrorBoundary/index.jsx
+     https://github.com/Arthur-art/Reactjs-insights/blob/master/src/components/ErrorBoundary/index.jsx
 
    - Exemplo com component tsx:
-
-- https://github.com/Arthur-art/ReactJs-TypeScript/blob/master/src/App.tsx
-
-- Projeto público
-```json
-https://github.com/x-orpheus/catch-react-error/tree/master/src
-```
+     https://github.com/Arthur-art/ReactJs-TypeScript/blob/master/src/App.tsx
 
 # Links para a documentação oficial de uma implementação do ErrorBoundary com Typescript:
 - https://github.com/bvaughn/react-error-boundary#installation
-- https://github.com/x-orpheus/catch-react-error
+
+
+# Trabalhando com ErrorBoundary no GraphQL
+- https://relay.dev/docs/guided-tour/rendering/error-states/
