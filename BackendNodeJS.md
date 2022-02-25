@@ -48,14 +48,17 @@
 # Reforçando aprendizado em JavaScript na codecademy
 - https://www.codecademy.com/learn/introduction-to-javascript
 
-# Construindo uma api nodejs express da Digital Innovation
-- https://web.digitalinnovation.one/course/introducao-ao-nodejs-com-expresses/learning/3f18da80-2051-44dd-b065-562751093ac3/?back=/browse
-
 # Construindo uma api com nodejs express e mongodb do zero Rocketseat
 - https://www.youtube.com/watch?v=BN_8bCfVp88&list=PL85ITvJ7FLoiXVwHXeOsOuVppGbBzo2dp
 
 # Trabalhando com Typescript
 - https://www.codecademy.com/learn/learn-typescript
+
+# Construindo APIs Node.js escaláveis com SOLID + TDD - Rocketseat
+- https://www.youtube.com/watch?v=mjBsii0eiuI&list=PL9uSeYpxO9pcfosKiPe32rIy-IPqg9IW6&index=18&t=1s
+
+# CRUD com Node.JS, Express, TypeORM e PostgreSQL - Rocketseat
+- https://www.youtube.com/watch?v=9AO2hZJsHrs&list=PL9uSeYpxO9pcfosKiPe32rIy-IPqg9IW6&index=17&t=1s
 
 # NLW 6 - Projeto feito do zero com nodejs e Typescript
 - https://app.rocketseat.com.br/node/mission-node-js
