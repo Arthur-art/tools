@@ -53,5 +53,11 @@
 # Trabalhando com Typescript
 - https://www.codecademy.com/learn/learn-typescript
 
+# Consumo de APIs RESTful no React da maneira certa - Rocketseat
+- https://www.youtube.com/watch?v=uNFB9EbQz90&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=30
+
+# Recriando interface do Github com ReactJS - Rocketseat
+- https://www.youtube.com/watch?v=iLEbGQXsg3k&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=7&t=1274s
+
 # NLW 6 - Projeto feito do zero com reactjs Typescript
 - https://app.rocketseat.com.br/node/mission-react-js
