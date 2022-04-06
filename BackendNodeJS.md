@@ -62,7 +62,7 @@
 
 # ________________________________________________________
 
-# Projetos para praticar oque aprendeu na prática:
+# Projetos para aplicar oque aprendeu na prática:
 
 ## Nodejs - Criando documentação com Swagger
 - https://www.youtube.com/watch?v=WhFx2heoFrA&list=PL9uSeYpxO9pcfosKiPe32rIy-IPqg9IW6&index=8
