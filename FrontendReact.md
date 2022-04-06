@@ -64,7 +64,7 @@
 
 # ________________________________________________________
 
-# Projetos para praticar oque aprendeu na prática:
+# Projetos para aplicar oque aprendeu na prática:
 
 ## Exercícios para explorar o Array.from()
 - https://www.youtube.com/watch?v=uxOASblSgT8&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=19
