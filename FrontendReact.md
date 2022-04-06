@@ -61,3 +61,37 @@
 
 # NLW 6 - Projeto feito do zero com reactjs Typescript
 - https://app.rocketseat.com.br/node/mission-react-js
+
+# ________________________________________________________
+
+# Projetos para praticar oque aprendeu na prática:
+
+## Exercícios para explorar o Array.from()
+- https://www.youtube.com/watch?v=uxOASblSgT8&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=19
+
+## Responsividade na prática
+- https://www.youtube.com/watch?v=H91DhKPjhPk&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=9
+
+## Recriando interface do Github com ReactJS
+- https://www.youtube.com/watch?v=iLEbGQXsg3k&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=7&t=1216s
+
+## Twitter responsivo na prática
+- https://www.youtube.com/watch?v=K-8z_4xvT3o&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=11
+
+## Homepage da Tesla com ReactJs
+- https://www.youtube.com/watch?v=Mf4Se4ZGcG8&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=12
+
+## Recriando a interface do Discord
+- https://www.youtube.com/watch?v=x4FdZd2-_uU&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=24
+
+## Formulários no ReactJS & React Native com Unform
+- https://www.youtube.com/watch?v=P65RJTTqkN4&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=14
+
+## Consumo de APIs RESTful no React da maneira certa
+- https://www.youtube.com/watch?v=uNFB9EbQz90&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=30&t=1s
+
+## Consumindo APIs no React com SWR
+- https://www.youtube.com/watch?v=Pbs1VIwPoRA&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=23
+
+## Desvendando Next.js do ZERO (SSG, SSR, ISR e mais)
+- https://www.youtube.com/watch?v=2LS6rP3ykJk&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=28
