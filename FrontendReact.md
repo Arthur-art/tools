@@ -54,7 +54,7 @@
 - https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/why-react
 
 # Trabalhando com Typescript
-- https://www.codecademy.com/learn/learn-typescript
+- https://app.rocketseat.com.br/node/especializar-typescript
 
 # Consumo de APIs RESTful no React da maneira certa - Rocketseat
 - https://www.youtube.com/watch?v=uNFB9EbQz90&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=30
