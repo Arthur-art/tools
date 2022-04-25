@@ -47,6 +47,9 @@
 # Reforçando aprendizado em JavaScript na codecademy
 - https://www.codecademy.com/learn/introduction-to-javascript
 
+# Introdução ao ReactJS - Rocketseat
+- https://app.rocketseat.com.br/node/especializar-react
+
 # Aprendendo ReactJs do zero na codecademy
 - https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/why-react
 
