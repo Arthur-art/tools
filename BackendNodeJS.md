@@ -48,11 +48,11 @@
 # Reforçando aprendizado em JavaScript na codecademy
 - https://www.codecademy.com/learn/introduction-to-javascript
 
+# Trabalhando com APIS - Rocketseat
+- https://app.rocketseat.com.br/node/trabalhando-com-apis
+
 # Trabalhando com Typescript
 - https://www.codecademy.com/learn/learn-typescript
-
-# CRUD com Node.JS, Express, TypeORM e PostgreSQL - Rocketseat
-- https://www.youtube.com/watch?v=9AO2hZJsHrs&list=PL9uSeYpxO9pcfosKiPe32rIy-IPqg9IW6&index=17&t=1s
 
 # Construindo APIs Node.js escaláveis com SOLID + TDD - Rocketseat
 - https://www.youtube.com/watch?v=mjBsii0eiuI&list=PL9uSeYpxO9pcfosKiPe32rIy-IPqg9IW6&index=18&t=1s
