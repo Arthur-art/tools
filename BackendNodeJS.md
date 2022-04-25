@@ -52,7 +52,7 @@
 - https://app.rocketseat.com.br/node/trabalhando-com-apis
 
 # Trabalhando com Typescript
-- https://www.codecademy.com/learn/learn-typescript
+- https://app.rocketseat.com.br/node/especializar-typescript
 
 # Construindo APIs Node.js escaláveis com SOLID + TDD - Rocketseat
 - https://www.youtube.com/watch?v=mjBsii0eiuI&list=PL9uSeYpxO9pcfosKiPe32rIy-IPqg9IW6&index=18&t=1s
