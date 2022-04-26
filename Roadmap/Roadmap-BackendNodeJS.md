@@ -1,10 +1,10 @@
 # Roadmap Backend com NodeJS:
 - Esta documentação tem como objetivo traçar um mapa de aprendizado para aprender JavaScript, TypeScript, NodeJs com Express e banco de dados SQL, para aqueles que pretendem seguir o caminho do backend NodeJs:
 
-## Obs:
+### Obs:
 - Certifique-se de possuir uma conta no Github para entrar no site da rocketseat via Github para ter acesso ao Discover;
 
-## Autor 
+### Autor 
 - Arthur Teixeira Santos Silva
 - Github: https://github.com/Arthur-art
 - Linkedin:https://www.linkedin.com/in/arthur-teixeira-santos-silva-167189177/
@@ -59,7 +59,7 @@
 ### NLW 6 - Projeto feito do zero com nodejs e Typescript
 - https://app.rocketseat.com.br/node/mission-node-js
 
-## Continuando a se desenvolver:
+# Continuando a se desenvolver:
 - Projetos para aplicar oque aprendeu na prática:
 
 ### Nodejs - Criando documentação com Swagger
