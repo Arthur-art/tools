@@ -14,15 +14,14 @@
 
 # Conhecendo o Github
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-git-hub
-- Me adicione la :)
-	- https://github.com/Arthur-art
-
+ 
 # Introdução a programação
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-programacao
-- https://app.rocketseat.com.br/node/guia-estelar-de-http
+- https://app.rocketseat.com.br/node/ds-estrutura-de-dados
 
 # Programação do básico ao intermediario com JavaScript
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-java-script
+- https://app.rocketseat.com.br/node/ds-programacao-oo/lesson/introducao-29
 
 # Trabalhando com repositorios GIT
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-git
@@ -40,7 +39,7 @@
 - https://app.rocketseat.com.br/node/node-js-ejs-html-inteligente
 
 # Trabalhando com SQL
-- https://app.rocketseat.com.br/node/sql
+- https://app.rocketseat.com.br/node/sql/group/introducao-6/lesson/overview-do-curso
 
 # Primeiro projeto feito do zero para praticar oque aprendeu
 - https://maratonadiscover.rocketseat.com.br/maratona/aula-01
