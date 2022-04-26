@@ -69,7 +69,7 @@
 
 ### Responsividade na prática
 - https://www.youtube.com/watch?v=H91DhKPjhPk&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=9
-- 
+ 
 ### Twitter responsivo na prática
 - https://www.youtube.com/watch?v=K-8z_4xvT3o&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=11
 
