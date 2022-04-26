@@ -10,80 +10,80 @@
 - Github: https://github.com/Arthur-art
 - Linkedin:https://www.linkedin.com/in/arthur-teixeira-santos-silva-167189177/
 
-### Configurando o ambiente 
+### 1-Configurando o ambiente 
 - https://app.rocketseat.com.br/node/ambiente-de-dev-de-outro-mundo
 - https://app.rocketseat.com.br/node/terminal
 
-### Introdução a programação
+### 2-Introdução a programação
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-programacao
 - https://app.rocketseat.com.br/node/ds-estrutura-de-dados
 
-### Dominando linguagem de marcação HTML
+### 3-Dominando linguagem de marcação HTML
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-html/group/conceitos-7/lesson/abertura-3
 
-### Trabalhando com CSS
+### 4-Trabalhando com CSS
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-css
 
-### Programação do básico ao intermediário com JavaScript
+### 5-Programação do básico ao intermediário com JavaScript
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-java-script
 
-### Trabalhando com a manipulação da DOM
+### 6-Trabalhando com a manipulação da DOM
 - https://app.rocketseat.com.br/discover/courses/track/preparacao-de-astronautas
 
-### Trabalhando com HTML,CSS e JavaScript
+### 7-Trabalhando com HTML,CSS e JavaScript
 - https://web.digitalinnovation.one/track/html-web-developer?tab=path
 
-### Reforçando aprendizado em JavaScript na codecademy
+### 8-Reforçando aprendizado em JavaScript na codecademy
 - https://www.codecademy.com/learn/introduction-to-javascript
  
-### Primeiro projeto feito do zero para praticar oque aprendeu
+### 9-Primeiro projeto feito do zero para praticar oque aprendeu
 - https://app.rocketseat.com.br/node/maratona-discover-edicao-01
 
-### Trabalhando com repositorios GIT e Github
+### 10-Trabalhando com repositorios GIT e Github
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-git
 - https://app.rocketseat.com.br/node/o-guia-estelar-de-git-hub
 
-### Introdução ao ReactJS - Rocketseat
+### 11-Introdução ao ReactJS - Rocketseat
 - https://app.rocketseat.com.br/node/especializar-react
 
-### Aprendendo ReactJs do zero na codecademy
+### 12-Aprendendo ReactJs do zero na codecademy
 - https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/why-react
 
-### Trabalhando com Typescript
+### 13-Trabalhando com Typescript
 - https://app.rocketseat.com.br/node/especializar-typescript
 
-### Consumo de APIs RESTful no React da maneira certa - Rocketseat
+### 14-Consumo de APIs RESTful no React da maneira certa - Rocketseat
 - https://www.youtube.com/watch?v=uNFB9EbQz90&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=30
 
-### Recriando interface do Github com ReactJS - Rocketseat
+### 15-Recriando interface do Github com ReactJS - Rocketseat
 - https://www.youtube.com/watch?v=iLEbGQXsg3k&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=7&t=1274s
 
-### NLW 6 - Projeto feito do zero com reactjs Typescript
+### 16-NLW 6 - Projeto feito do zero com reactjs Typescript
 - https://app.rocketseat.com.br/node/mission-react-js
 
 # Continuando a se desenvolver:
 - Projetos para aplicar oque aprendeu na prática:
 
-### Exercícios para explorar o Array.from()
+### 1-Exercícios para explorar o Array.from()
 - https://www.youtube.com/watch?v=uxOASblSgT8&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=19
 
-### Responsividade na prática
+### 2-Responsividade na prática
 - https://www.youtube.com/watch?v=H91DhKPjhPk&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=9
  
-### Twitter responsivo na prática
+### 3-Twitter responsivo na prática
 - https://www.youtube.com/watch?v=K-8z_4xvT3o&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=11
 
-### Homepage da Tesla com ReactJs
+### 4-Homepage da Tesla com ReactJs
 - https://www.youtube.com/watch?v=Mf4Se4ZGcG8&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=12
 
-### Recriando a interface do Discord
+### 5-Recriando a interface do Discord
 - https://www.youtube.com/watch?v=x4FdZd2-_uU&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=24
 
-### Formulários no ReactJS & React Native com Unform
+### 6-Formulários no ReactJS & React Native com Unform
 - https://www.youtube.com/watch?v=P65RJTTqkN4&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=14
 
-### Consumindo APIs no React com SWR
+### 7-Consumindo APIs no React com SWR
 - https://www.youtube.com/watch?v=Pbs1VIwPoRA&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=23
 
-### Desvendando Next.js do ZERO (SSG, SSR, ISR e mais)
+### 8-Desvendando Next.js do ZERO (SSG, SSR, ISR e mais)
 - https://www.youtube.com/watch?v=2LS6rP3ykJk&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=28
