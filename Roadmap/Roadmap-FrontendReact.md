@@ -61,8 +61,6 @@
 ### NLW 6 - Projeto feito do zero com reactjs Typescript
 - https://app.rocketseat.com.br/node/mission-react-js
 
-# ________________________________________________________
-
 ## Continuando a se desenvolver:
 - Projetos para aplicar oque aprendeu na prática:
 
