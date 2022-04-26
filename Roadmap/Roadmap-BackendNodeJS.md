@@ -59,8 +59,6 @@
 ### NLW 6 - Projeto feito do zero com nodejs e Typescript
 - https://app.rocketseat.com.br/node/mission-node-js
 
-# ________________________________________________________
-
 ## Continuando a se desenvolver:
 - Projetos para aplicar oque aprendeu na prática:
 
