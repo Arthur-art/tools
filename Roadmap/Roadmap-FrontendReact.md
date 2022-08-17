@@ -58,8 +58,8 @@
 ### 15-Recriando interface do Github com ReactJS - Rocketseat
 - https://www.youtube.com/watch?v=iLEbGQXsg3k&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=7&t=1274s
 
-### 16-NLW 6 - Projeto feito do zero com reactjs Typescript
-- https://app.rocketseat.com.br/node/mission-react-js
+### 16-Recriando a interface do Discord
+- https://www.youtube.com/watch?v=x4FdZd2-_uU&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=24
 
 # Continuando a se desenvolver:
 - Projetos para aplicar oque aprendeu na prática:
@@ -76,14 +76,11 @@
 ### 4-Homepage da Tesla com ReactJs
 - https://www.youtube.com/watch?v=Mf4Se4ZGcG8&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=12
 
-### 5-Recriando a interface do Discord
-- https://www.youtube.com/watch?v=x4FdZd2-_uU&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=24
-
-### 6-Formulários no ReactJS & React Native com Unform
+### 5-Formulários no ReactJS & React Native com Unform
 - https://www.youtube.com/watch?v=P65RJTTqkN4&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=14
 
-### 7-Consumindo APIs no React com SWR
+### 6-Consumindo APIs no React com SWR
 - https://www.youtube.com/watch?v=Pbs1VIwPoRA&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=23
 
-### 8-Desvendando Next.js do ZERO (SSG, SSR, ISR e mais)
+### 7-Desvendando Next.js do ZERO (SSG, SSR, ISR e mais)
 - https://www.youtube.com/watch?v=2LS6rP3ykJk&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=28
