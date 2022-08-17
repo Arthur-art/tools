@@ -56,9 +56,6 @@
 ### 14-Construindo APIs Node.js escaláveis com SOLID + TDD - Rocketseat
 - https://www.youtube.com/watch?v=mjBsii0eiuI&list=PL9uSeYpxO9pcfosKiPe32rIy-IPqg9IW6&index=18&t=1s
 
-### 15-NLW 6 - Projeto feito do zero com nodejs e Typescript
-- https://app.rocketseat.com.br/node/mission-node-js
-
 # Continuando a se desenvolver:
 - Projetos para aplicar oque aprendeu na prática:
 
