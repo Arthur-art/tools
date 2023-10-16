@@ -1,64 +1,66 @@
 # Roadmap Frontend com ReactJS:
 - Esta documentação tem como objetivo traçar um mapa de aprendizado para aprender JavaScript, TypeScript, ReactJS, para aqueles que pretendem seguir o caminho do frontend ReactJS
-
-
-### Obs: 
-- Certifique-se de possuir uma conta no Github para entrar no site da rocketseat via Github para ter acesso ao Discover;
-
+- 
 ### Autor 
 - Arthur Teixeira Santos Silva
 - Github: https://github.com/Arthur-art
 - Linkedin:https://www.linkedin.com/in/arthur-teixeira-santos-silva-167189177/
 
-### 1-Configurando o ambiente 
-- https://app.rocketseat.com.br/node/ambiente-de-dev-de-outro-mundo
-- https://app.rocketseat.com.br/node/terminal
+### 1-Introdução a programação
+- https://www.youtube.com/watch?v=chkRo381f44&ab_channel=Rocketseat
 
-### 2-Introdução a programação
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-programacao
-- https://app.rocketseat.com.br/node/ds-estrutura-de-dados
+### 2-Configurando o ambiente 
+- https://www.youtube.com/watch?v=c7P03kkrEG8&ab_channel=Rocketseat
 
-### 3-Dominando linguagem de marcação HTML
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-html/group/conceitos-7/lesson/abertura-3
+### 2.1-Lógica de programação
+- https://www.youtube.com/watch?v=gMxQ8vxH9Vk&ab_channel=AttekitaDev
+
+### 3-Trabalhando com a linguagem de marcação HTML
+- https://www.youtube.com/watch?v=4Gq3WW6FwVA&ab_channel=LuizLudwig
+- https://www.youtube.com/watch?v=3oSIqIqzN3M&ab_channel=RafaellaBallerini
+- https://www.youtube.com/watch?v=TBplwrsUj4s&ab_channel=Rocketseat
 
 ### 4-Trabalhando com CSS
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-css
+- https://www.youtube.com/watch?v=LWU2OR19ZG4&ab_channel=RafaellaBallerini
+- https://www.youtube.com/watch?v=q_ppL_sU6qU&t=4s&ab_channel=Rocketseat
+- https://www.youtube.com/watch?v=q2zA4OOjx2g&ab_channel=Rocketseat
 
-### 5-Programação do básico ao intermediário com JavaScript
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-java-script
+### 4-Desenvolvimento sólido com HTML e CSS
+- https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n
 
-### 6-Trabalhando com a manipulação da DOM
-- https://app.rocketseat.com.br/discover/courses/track/preparacao-de-astronautas
+### 5-Programação do básico ao intermediário com JavaScript e Manipulação da DOM
+- https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1
 
-### 7-Trabalhando com HTML,CSS e JavaScript
-- https://web.digitalinnovation.one/track/html-web-developer?tab=path
-
-### 8-Reforçando aprendizado em JavaScript na codecademy
+### 6-Reforçando aprendizado em JavaScript na codecademy
 - https://www.codecademy.com/learn/introduction-to-javascript
  
-### 9-Primeiro projeto feito do zero para praticar oque aprendeu
-- https://app.rocketseat.com.br/node/maratona-discover-edicao-01
+### 7-Primeiros projetos feitos do zero para praticar oque aprendeu
+- https://www.youtube.com/watch?v=SjtdH3dWLa8&ab_channel=ManualdoDev
+- https://www.youtube.com/watch?v=qxzqEuAOYZ4&ab_channel=RodolfoMori
 
-### 10-Trabalhando com repositorios GIT e Github
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-git
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-git-hub
+### 8-Trabalhando com repositorios GIT e Github
+- https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA
 
-### 11-Introdução ao ReactJS - Rocketseat
-- https://app.rocketseat.com.br/node/especializar-react
+### 9-Introdução ao ReactJS
+- https://www.youtube.com/watch?v=37SwqREHRGI&t=1232s&ab_channel=Rocketseat
+- https://www.youtube.com/watch?v=K65wUN-2no4&ab_channel=MaykBrito
 
-### 12-Aprendendo ReactJs do zero na codecademy
+### 10-Aprendendo ReactJs do zero na codecademy
 - https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/why-react
 
-### 13-Trabalhando com Typescript
-- https://app.rocketseat.com.br/node/especializar-typescript
+### 11-Trabalhando com Typescript
+- https://www.youtube.com/watch?v=lCemyQeSCV8&ab_channel=MatheusBattisti-HoradeCodar
 
-### 14-Consumo de APIs RESTful no React da maneira certa - Rocketseat
+### 12-Trabalhando com Reactjs e Typescript
+- https://www.youtube.com/watch?v=tG3Uwvuqzuk&ab_channel=Jo%C3%A3oBibiano
+
+### 13-Consumo de APIs RESTful no Reactjs da maneira certa
 - https://www.youtube.com/watch?v=uNFB9EbQz90&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=30
 
-### 15-Recriando interface do Github com ReactJS - Rocketseat
+### 14-Recriando interface do Github com ReactJS
 - https://www.youtube.com/watch?v=iLEbGQXsg3k&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=7&t=1274s
 
-### 16-Recriando a interface do Discord
+### 15-Recriando a interface do Discord
 - https://www.youtube.com/watch?v=x4FdZd2-_uU&list=PL9uSeYpxO9pdjUdj9ALo6P_E5jVxv9w9o&index=24
 
 # Continuando a se desenvolver:
