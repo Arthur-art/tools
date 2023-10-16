@@ -15,14 +15,11 @@
 ### 2.1-Lógica de programação
 - https://www.youtube.com/watch?v=gMxQ8vxH9Vk&ab_channel=AttekitaDev
 
-### 4-Aprendendo sobre HTTP
+### 3-Aprendendo sobre HTTP
 - https://www.youtube.com/watch?v=PcHbyGVoqZk&ab_channel=Refatorando
 
-### 3-Trabalhando com a linguagem de marcação HTML
+### 4-Trabalhando com a linguagem de marcação HTML e CSS
 - https://www.youtube.com/watch?v=4Gq3WW6FwVA&ab_channel=LuizLudwig
-
-### 4-Trabalhando com CSS
-- https://www.youtube.com/watch?v=LWU2OR19ZG4&ab_channel=RafaellaBallerini
 
 ### 5-Programação do básico ao intermediário com JavaScript e Manipulação da DOM
 - https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1
