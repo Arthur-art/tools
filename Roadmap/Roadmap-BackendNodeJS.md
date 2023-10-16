@@ -1,59 +1,53 @@
 # Roadmap Backend com NodeJS:
-- Esta documentação tem como objetivo traçar um mapa de aprendizado para aprender JavaScript, TypeScript, NodeJs com Express e banco de dados SQL, para aqueles que pretendem seguir o caminho do backend NodeJs:
-
-### Obs:
-- Certifique-se de possuir uma conta no Github para entrar no site da rocketseat via Github para ter acesso ao Discover;
+- Esta documentação tem como objetivo traçar um mapa de aprendizado para aprender JavaScript, TypeScript, NodeJs e banco de dados, para aqueles que pretendem seguir o caminho do backend NodeJs:
 
 ### Autor 
 - Arthur Teixeira Santos Silva
 - Github: https://github.com/Arthur-art
 - Linkedin:https://www.linkedin.com/in/arthur-teixeira-santos-silva-167189177/
 
+### 1-Introdução a programação
+- https://www.youtube.com/watch?v=chkRo381f44&ab_channel=Rocketseat
 
-### 1-Configurando o ambiente 
-- https://app.rocketseat.com.br/node/ambiente-de-dev-de-outro-mundo
-- https://app.rocketseat.com.br/node/terminal
- 
-### 2-Introdução a programação
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-programacao
-- https://app.rocketseat.com.br/node/ds-estrutura-de-dados
+### 2-Configurando o ambiente 
+- https://www.youtube.com/watch?v=c7P03kkrEG8&ab_channel=Rocketseat
 
-### 3-Programação do básico ao intermediario com JavaScript
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-java-script
-- https://app.rocketseat.com.br/node/ds-programacao-oo/lesson/introducao-29
+### 2.1-Lógica de programação
+- https://www.youtube.com/watch?v=gMxQ8vxH9Vk&ab_channel=AttekitaDev
 
-### 4-Trabalhando com repositorios GIT e Github
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-git
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-git-hub
+### 4-Aprendendo sobre HTTP
+- https://www.youtube.com/watch?v=PcHbyGVoqZk&ab_channel=Refatorando
 
-### 5-Aprendendo sobre HTTP
-- https://app.rocketseat.com.br/node/guia-estelar-de-http
+### 3-Trabalhando com a linguagem de marcação HTML
+- https://www.youtube.com/watch?v=4Gq3WW6FwVA&ab_channel=LuizLudwig
 
-### 6-Trabalhando com NodeJS puro
-- https://app.rocketseat.com.br/node/node-js-o-motor-da-nave
+### 4-Trabalhando com CSS
+- https://www.youtube.com/watch?v=LWU2OR19ZG4&ab_channel=RafaellaBallerini
 
-### 7-Trabalhando com HTML
-- https://app.rocketseat.com.br/node/o-guia-estelar-de-html
+### 5-Programação do básico ao intermediário com JavaScript e Manipulação da DOM
+- https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1
 
-### 8-Integrando NodeJS com HTML
-- https://app.rocketseat.com.br/node/node-js-ejs-html-inteligente
-
-### 9-Trabalhando com SQL
-- https://app.rocketseat.com.br/node/sql/group/introducao-6/lesson/overview-do-curso
-
-### 10-Primeiro projeto feito do zero para praticar oque aprendeu
-- https://maratonadiscover.rocketseat.com.br/maratona/aula-01
-
-### 11-Reforçando aprendizado em JavaScript na codecademy
+### 6-Reforçando aprendizado em JavaScript na codecademy
 - https://www.codecademy.com/learn/introduction-to-javascript
 
-### 12-Trabalhando com APIS - Rocketseat
-- https://app.rocketseat.com.br/node/trabalhando-com-apis
+### 7-Introdução sobre APIs
+- https://www.youtube.com/watch?v=ghTrp1x_1As&ab_channel=Rocketseat
 
-### 13-Trabalhando com Typescript
-- https://app.rocketseat.com.br/node/especializar-typescript
+### 8-Trabalhando com repositorios GIT e Github
+- https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA
 
-### 14-Construindo APIs Node.js escaláveis com SOLID + TDD - Rocketseat
+### 9-Primeiros projetos feitos do zero para praticar oque aprendeu
+- https://www.youtube.com/watch?v=hHM-hr9q4mo&ab_channel=Rocketseat
+- https://www.youtube.com/watch?v=IOfDoyP1Aq0&ab_channel=FelipeRocha%E2%80%A2dicasparadevs
+- https://www.youtube.com/watch?v=zaWFnHagbrM&ab_channel=GabrielRangel-Fala%2CCoders%21
+
+### 10-Trabalhando com Typescript
+- https://www.youtube.com/watch?v=lCemyQeSCV8&ab_channel=MatheusBattisti-HoradeCodar
+
+### 11-Trabalhando com SQL
+- https://www.youtube.com/playlist?list=PL7iAT8C5wumpQWB8AFW7CwK2nlzh8ZdP9
+
+### 12-Construindo APIs Node.js escaláveis com SOLID + TDD - Rocketseat
 - https://www.youtube.com/watch?v=mjBsii0eiuI&list=PL9uSeYpxO9pcfosKiPe32rIy-IPqg9IW6&index=18&t=1s
 
 # Continuando a se desenvolver:
