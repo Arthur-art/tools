@@ -1,6 +1,5 @@
 # Roadmap Frontend com ReactJS:
 - Esta documentação tem como objetivo traçar um mapa de aprendizado para aprender JavaScript, TypeScript, ReactJS, para aqueles que pretendem seguir o caminho do frontend ReactJS
-- 
 ### Autor 
 - Arthur Teixeira Santos Silva
 - Github: https://github.com/Arthur-art
